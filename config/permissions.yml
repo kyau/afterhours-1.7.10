@@ -1,0 +1,6 @@
+groups:
+  default:
+    default: true
+    permissions:
+    - modifyworld.*
+schema-version: 1

@@ -1,0 +1,27 @@
+# This file contains the message sent to the player on login.
+# Lines starting with # are not read.
+# There are several codes that can be used to format the text.
+# If you want to use color, use this symbol & (ALT code 21) to indicate a color.
+# Handy link: http://www.minecraftwiki.net/wiki/Formatting_codes
+# Other codes:
+# %playername% => The name of the player the message is send to
+# %rank% => Players rank (see chat config)
+# %groupPrefix% => Group prefix (see chat config)
+# %groupSuffix% => Group suffix (see chat config)
+# %playerPrefix% => Player prefix (see chat config)
+# %playerSuffix% => Player suffix (see chat config)
+# %players% => Amount of players online.
+# %uptime% => Current server uptime.
+# %uniqueplayers% => Amount of unique player logins.
+# %time% => Local server time. All in one string.
+# %hour% ; %min% ; %sec% => Local server time.
+# %day% ; %month% ; %year% => Local server date.
+# %online => Nice list of online players.
+#
+# If you would like more codes, you can make an issue on https://github.com/ForgeEssentials/ForgeEssentialsMain/issues
+&8-&r
+&8[ &e** &8]&r There are &a%players%&r player&7(&rs&7)&r online
+&8[ &e** &8]&r Use &3/help&r for more information
+&8-&r
+&8[ &e** &8]&r Important News, please type &4/news&r
+&8-&r

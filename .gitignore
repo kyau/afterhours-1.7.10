@@ -1,0 +1,40 @@
+# Do not push world files to github
+afterhours/
+# Do not push libraries, the server, mods or plugins to github
+libraries/
+mods/*.jar
+mods/*.zip
+mods/*/*.jar
+mods/*/*.zip
+forge*.jar
+minecraft*.jar
+# Clean up ForgeEssentials stuff
+ForgeEssentials/Backups/
+ForgeEssentials/Chat/
+ForgeEssentials/ServerVote/
+ForgeEssentials/lib/
+ForgeEssentials/modlist.txt
+# Do not push logs/test stuff to github
+asm/
+bin/create-client
+crash-reports/
+logs/
+client-mods/
+ForgeModLoader-server-*
+*.log
+*.log.lck
+# Do not push local server databases to github
+banned-ips.json
+banned-players.json
+ops.json
+pack.json
+usercache.json
+usernamecache.json
+version.json
+whitelist.json
+# Miscellaneous
+banned*.txt
+eula.txt
+*.class
+java.pid
+screen.name

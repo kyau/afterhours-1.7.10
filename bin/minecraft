@@ -1,0 +1,235 @@
+#!/bin/bash
+
+# Modified from https://github.com/pahimar/ForgeCraft-Script
+
+USERNAME="kyau"
+SERVER_NAME="AfterHours"
+
+MC_PATH="/home/$USERNAME/afterhours"
+BACKUP_PATH="/home/$USERNAME/backup"
+ARCHIVE_PATH="$BACKUP_PATH/archive"
+BACKUP_DIR=$(date +%b_%Y)
+
+MC_VERSION='1.7.10'
+MC_PORT=$(grep server-port $MC_PATH/server.properties | cut -d '=' -f 2)
+CPU_COUNT=2
+MEMORY_OPTS='-Xmx3G -Xms3G'
+PERMSIZE='256'
+PERMSIZE_OPTS="-XX:MaxPermSize=${PERMSIZE}m -XX:PermSize=${PERMSIZE}m"
+JAVA_OPTS="-XX:NewRatio=3 -XX:SurvivorRatio=3 -XX:TargetSurvivorRatio=80 -XX:MaxTenuringThreshold=8 -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:MaxGCPauseMillis=10 -XX:GCPauseIntervalMillis=50 -XX:MaxGCMinorPauseMillis=7 -XX:+ExplicitGCInvokesConcurrent -XX:+UseCMSInitiatingOccupancyOnly -XX:CMSInitiatingOccupancyFraction=60 -XX:+BindGCTaskThreadsToCPUs -Xnoclassgc"
+# Forge
+#forge-1.7.10-10.13.2.1286-universal.jar
+SNAME='forge'
+VERSION='10.13.2.1286-universal'
+SERVICE="${SNAME}-${MC_VERSION}-${VERSION}.jar"
+
+MC_CMD="/usr/bin/java -d64 ${PERMSIZE_OPTS} ${MEMORY_OPTS} ${JAVA_OPTS} -Djava.awt.headless=true -jar ${SERVICE} nogui"
+
+if [ -z "$MC_PORT" ]; then
+    MC_PORT=25565
+fi
+
+if [ $(whoami) != $USERNAME ]; then
+    echo "You must run this as '$USERNAME'."
+    exit $?
+fi
+
+is_running() {
+    if [ ! -e $MC_PATH/java.pid ]; then
+        return 1
+    fi
+    pid=$(cat $MC_PATH/java.pid)
+    if [[ -z $pid ]]; then
+        return 1
+    fi
+    ps -eo "%p" | grep "^\\s*$pid\\s*\$" > /dev/null
+    return $?
+}
+
+mc_start() {
+    if is_running; then
+        echo "Tried to start but $SERVER_NAME was already running!"
+    else
+        echo "$SERVER_NAME was not running... starting."
+        cd $MC_PATH
+        screen -dmS mc$MC_PORT clear &
+        sleep 1
+        screen -p 0 -S mc$MC_PORT -X stuff $"$MC_CMD$(printf \\r)"
+        for (( i=0; i < 10; i++ )); do
+            screenpid=$(ps -eo '%p %a' | grep -v grep | grep -i screen | grep mc$MC_PORT | awk '{print $1}')
+            javapid=$(ps -eo '%P %p' | grep "^\\s*$screenpid " | awk '{print $2}')
+            if [[ -n "$screenpid" && -n "$javapid" ]]; then
+                break
+            fi
+            sleep 1
+        done
+        if [[ -n "$screenpid" && -n "$javapid" ]]; then
+            echo "$SERVER_NAME is now running."
+            echo "$javapid" > $MC_PATH/java.pid
+            echo "$screenpid.mc$MC_PORT" > $MC_PATH/screen.name
+        else
+            echo "Could not start $SERVER_NAME."
+        fi
+    fi
+}
+
+mc_saveoff() {
+    if is_running; then
+        echo "$SERVER_NAME is running... suspending saves"
+        mc_exec "say Backup Starting..."
+        mc_exec "save-off"
+        mc_exec "save-all"
+        sync
+        sleep 10
+    else
+        echo "$SERVER_NAME was not running. Not suspending saves."
+    fi
+}
+
+mc_saveon() {
+    if is_running; then
+        echo "$SERVER_NAME is running... re-enabling saves"
+        mc_exec "save-on"
+        mc_exec "say Backup Finished..."
+    else
+        echo "$SERVER_NAME was not running. Not resuming saves."
+    fi
+}
+
+mc_kill() {
+    pid=$(cat $MC_PATH/java.pid)
+    echo "terminating process with pid $pid"
+    kill $pid
+    for (( i=0; i < 10; i++ )); do
+        is_running || break
+        sleep 1
+    done
+    if is_running; then
+        echo "$SERVER_NAME could not be terminated, killing..."
+        kill -SIGKILL $pid
+        echo "$SERVER_NAME killed"
+    else
+        echo "$SERVER_NAME terminated"
+    fi
+}
+
+mc_stop() {
+    if is_running; then
+        echo "$SERVER_NAME is running... stopping."
+        mc_exec "say Automatic Restart in 10 seconds..."
+        mc_exec "save-all"
+        sleep 10
+        mc_exec "stop"
+        for (( i=0; i < 20; i++ )); do
+            is_running || break
+            sleep 1
+        done
+    else
+        echo "$SERVER_NAME was not running."
+    fi
+    if is_running; then
+        echo "$SERVER_NAME could not be shut down cleanly... still running."
+        mc_kill
+    else
+        echo "$SERVER_NAME is shut down."
+    fi
+    rm $MC_PATH/java.pid
+    rm $MC_PATH/screen.name
+}
+
+mc_backup() {
+    echo "Backing up minecraft world"
+    [ -d "$BACKUP_PATH/$BACKUP_DIR" ] || mkdir -p "$BACKUP_PATH/$BACKUP_DIR"
+    rdiff-backup $MC_PATH "$BACKUP_PATH/$BACKUP_DIR"
+    echo "Backup complete"
+}
+
+mc_thinoutbackup() {
+    if (($(date +%H) == 0)) && (($(date +%M) < 15)); then
+        archivedate=$(date --date="7 days ago")
+        echo "Thinning backups created $archivedate out"
+        archivedateunix=$(date --date="$archivedate" +%s)
+        archivesourcedir=$BACKUP_PATH/$(date --date="$archivedate" +%b_%Y)
+        archivesource=$archivesourcedir/rdiff-backup-data/increments.$(date --date="$archivedate" +%Y-%m-%dT%H):0*.dir
+        archivesource=$(echo $archivesource)
+        archivedest=$ARCHIVE_PATH/$(date --date="$archivedate" +%b_%Y)
+        if [[ ! -f $archivesource ]]; then
+            echo "Nothing to be done"
+        else
+            tempdir=$(mktemp -d)
+            if [[ ! $tempdir =~ ^/tmp ]]; then
+                echo "invalid tmp dir $tempdir"
+            else
+                rdiff-backup $archivesource $tempdir
+                rdiff-backup --current-time $archivedateunix $tempdir $archivedest
+                rm -R "$tempdir"
+                rdiff-backup --remove-older-than 7D --force $archivesourcedir
+                echo "done"
+            fi
+        fi
+    fi
+}
+
+mc_exec() {
+    if is_running; then
+        screen -p 0 -S $(cat $MC_PATH/screen.name) -X stuff "$@$(printf \\r)"
+    else
+        echo "$SERVER_NAME was not running. Not executing command."
+    fi
+}
+
+mc_dumpcrashlogs() {
+    if is_running; then
+        cp $MC_PATH/crash-reports/* $CRASHLOG_DB_PATH
+        mv $MC_PATH/crash-reports/* $MC_PATH/crash-reports.archive/
+    fi
+}
+
+case "$1" in
+    start)
+        mc_start
+        ;;
+    stop)
+        mc_stop
+        ;;
+    restart)
+        mc_stop
+        mc_start
+        ;;
+    backup)
+        mc_saveoff
+        mc_backup
+        mc_saveon
+        mc_thinoutbackup
+        ;;
+    exec)
+        shift
+        mc_exec "$@"
+        ;;
+    dumpcrashlogs)
+        mc_dumpcrashlogs
+        ;;
+    status)
+        if is_running; then
+            echo "$SERVER_NAME is running."
+        else
+            echo "$SERVER_NAME is not running."
+        fi
+        ;;
+    attach)
+        if is_running; then
+            echo "Attaching to server..."
+            echo "[CTRL] + [A] + [D] to detach"
+            sleep 2
+            screen -DRS $(cat $MC_PATH/screen.name)
+        else
+            echo "$SERVER_NAME is not running."
+        fi
+        ;;
+    *)
+        echo "Usage: $(readlink -f $0) {start|stop|restart|status|backup|dumpcrashlogs|exec|attach}"
+        exit 1
+        ;;
+esac
+
+exit 0
