@@ -1,5 +1,6 @@
 # Do not push world files to github
 afterhours/
+afterhours-old/
 # Do not push libraries, the server, mods or plugins to github
 libraries/
 mods/*.jar

@@ -1,6 +1,6 @@
 #// ------------ PERMISSIONS LIST ------------ \\#
-#// --------------- 2015-1-22 --------------- \\#
-#// ------------ Total amount: 11815 ------------ \\#
+#// --------------- 2015-1-23 --------------- \\#
+#// ------------ Total amount: 11810 ------------ \\#
 #// ------------------------------------------ \\#
 
 cmd.AlterRate
@@ -26,7 +26,6 @@ cmd.forge
 cmd.freq
 cmd.givesample
 cmd.givetemplate
-cmd.help
 cmd.hunger
 cmd.ic2
 cmd.iskamiunlocked
@@ -1613,7 +1612,6 @@ fe.protection.break.tile.railcraft.ore                                          
 fe.protection.break.tile.railcraft.post                                              # BREAK tile.railcraft.post.name
 fe.protection.break.tile.railcraft.post.metal                                        # BREAK Metal Post
 fe.protection.break.tile.railcraft.post.metal.platform                               # BREAK Metal Platform
-fe.protection.break.tile.railcraft.residual.heat                                     # BREAK Residual Heat
 fe.protection.break.tile.railcraft.signal                                            # BREAK tile.railcraft.signal.name
 fe.protection.break.tile.railcraft.slab                                              # BREAK tile.railcraft.slab.name
 fe.protection.break.tile.railcraft.stair                                             # BREAK tile.railcraft.stair.name
@@ -3355,7 +3353,6 @@ fe.protection.interact.tile.railcraft.ore                                       
 fe.protection.interact.tile.railcraft.post                                           # INTERACT tile.railcraft.post.name
 fe.protection.interact.tile.railcraft.post.metal                                     # INTERACT Metal Post
 fe.protection.interact.tile.railcraft.post.metal.platform                            # INTERACT Metal Platform
-fe.protection.interact.tile.railcraft.residual.heat                                  # INTERACT Residual Heat
 fe.protection.interact.tile.railcraft.signal                                         # INTERACT tile.railcraft.signal.name
 fe.protection.interact.tile.railcraft.slab                                           # INTERACT tile.railcraft.slab.name
 fe.protection.interact.tile.railcraft.stair                                          # INTERACT tile.railcraft.stair.name
@@ -8445,7 +8442,6 @@ fe.protection.place.tile.railcraft.ore                                          
 fe.protection.place.tile.railcraft.post                                              # PLACE tile.railcraft.post.name
 fe.protection.place.tile.railcraft.post.metal                                        # PLACE Metal Post
 fe.protection.place.tile.railcraft.post.metal.platform                               # PLACE Metal Platform
-fe.protection.place.tile.railcraft.residual.heat                                     # PLACE Residual Heat
 fe.protection.place.tile.railcraft.signal                                            # PLACE tile.railcraft.signal.name
 fe.protection.place.tile.railcraft.slab                                              # PLACE tile.railcraft.slab.name
 fe.protection.place.tile.railcraft.stair                                             # PLACE tile.railcraft.stair.name
@@ -11799,9 +11795,9 @@ mc.defaultgamemode
 mc.deop
 mc.difficulty
 mc.effect
-mc.gamemode
 mc.gamerule
 mc.give
+mc.help
 mc.kick
 mc.list
 mc.me
@@ -11827,8 +11823,7 @@ mc.tell
 mc.tellraw
 mc.testfor
 mc.testforblock
+mc.time
 mc.toggledownfall
-mc.tp
-mc.weather
 mc.whitelist
 mc.xp
