@@ -1,6 +1,6 @@
 #// ------------ PERMISSIONS LIST ------------ \\#
 #// --------------- 2015-1-23 --------------- \\#
-#// ------------ Total amount: 11810 ------------ \\#
+#// ------------ Total amount: 11815 ------------ \\#
 #// ------------------------------------------ \\#
 
 cmd.AlterRate
@@ -14,11 +14,15 @@ cmd.ccdebug
 cmd.checkwarp
 cmd.chunkloaders
 cmd.cofh
+cmd.dmap
+cmd.dmarker
 cmd.dumpOredict
 cmd.dumpTools
 cmd.dumpalleles
 cmd.dumphandlers
 cmd.dumpregistry
+cmd.dynmap
+cmd.dynmapexp
 cmd.enderstorage
 cmd.flimflam
 cmd.forestry
@@ -26,6 +30,7 @@ cmd.forge
 cmd.freq
 cmd.givesample
 cmd.givetemplate
+cmd.help
 cmd.hunger
 cmd.ic2
 cmd.iskamiunlocked
@@ -11795,9 +11800,9 @@ mc.defaultgamemode
 mc.deop
 mc.difficulty
 mc.effect
+mc.enchant
 mc.gamerule
 mc.give
-mc.help
 mc.kick
 mc.list
 mc.me
@@ -11823,7 +11828,7 @@ mc.tell
 mc.tellraw
 mc.testfor
 mc.testforblock
-mc.time
 mc.toggledownfall
+mc.weather
 mc.whitelist
 mc.xp

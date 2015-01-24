@@ -19,6 +19,7 @@ ForgeEssentials/modlist.txt
 asm/
 bin/create-client
 crash-reports/
+dynmap/
 logs/
 client-mods/
 ForgeModLoader-server-*
