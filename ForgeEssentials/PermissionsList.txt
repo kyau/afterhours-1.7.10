@@ -1,6 +1,6 @@
 #// ------------ PERMISSIONS LIST ------------ \\#
-#// --------------- 2015-1-23 --------------- \\#
-#// ------------ Total amount: 11815 ------------ \\#
+#// --------------- 2015-1-24 --------------- \\#
+#// ------------ Total amount: 11816 ------------ \\#
 #// ------------------------------------------ \\#
 
 cmd.AlterRate
@@ -30,7 +30,6 @@ cmd.forge
 cmd.freq
 cmd.givesample
 cmd.givetemplate
-cmd.help
 cmd.hunger
 cmd.ic2
 cmd.iskamiunlocked
@@ -4571,7 +4570,6 @@ fe.protection.inventory.item.extrautils:shears                                  
 fe.protection.inventory.item.extrautils:sonar_goggles                                # INVENTORY Sonar Goggles
 fe.protection.inventory.item.extrautils:temporalHoe                                  # INVENTORY Reversing Hoe
 fe.protection.inventory.item.extrautils:unstableingot                                # INVENTORY Unstable Ingot
-fe.protection.inventory.item.extrautils:watering_can                                 # INVENTORY Watering Can
 fe.protection.inventory.item.extremechiliItem                                        # INVENTORY Extreme Chili
 fe.protection.inventory.item.eyeOfEnder                                              # INVENTORY Eye of Ender
 fe.protection.inventory.item.fairybreadItem                                          # INVENTORY Fairy Bread
@@ -9662,7 +9660,6 @@ fe.protection.use.item.extrautils:shears                                        
 fe.protection.use.item.extrautils:sonar_goggles                                      # USE Sonar Goggles
 fe.protection.use.item.extrautils:temporalHoe                                        # USE Reversing Hoe
 fe.protection.use.item.extrautils:unstableingot                                      # USE Unstable Ingot
-fe.protection.use.item.extrautils:watering_can                                       # USE Watering Can
 fe.protection.use.item.extremechiliItem                                              # USE Extreme Chili
 fe.protection.use.item.eyeOfEnder                                                    # USE Eye of Ender
 fe.protection.use.item.fairybreadItem                                                # USE Fairy Bread
@@ -11803,7 +11800,9 @@ mc.effect
 mc.enchant
 mc.gamerule
 mc.give
+mc.help
 mc.kick
+mc.kill
 mc.list
 mc.me
 mc.netstat
@@ -11828,7 +11827,9 @@ mc.tell
 mc.tellraw
 mc.testfor
 mc.testforblock
+mc.time
 mc.toggledownfall
+mc.tp
 mc.weather
 mc.whitelist
 mc.xp
