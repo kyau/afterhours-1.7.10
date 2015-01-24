@@ -15,9 +15,11 @@ ForgeEssentials/Chat/
 ForgeEssentials/ServerVote/
 ForgeEssentials/lib/
 ForgeEssentials/modlist.txt
+ForgeEssentials/PermissionsList.txt
 # Do not push logs/test stuff to github
 asm/
 bin/create-client
+config/worldedit/worldedit.properties
 crash-reports/
 dynmap/
 logs/
