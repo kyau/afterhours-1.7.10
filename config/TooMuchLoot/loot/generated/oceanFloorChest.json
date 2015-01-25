@@ -1,0 +1,119 @@
+{
+  "category": "oceanFloorChest",
+  "count_min": 0,
+  "count_max": 0,
+  "loot": [
+    {
+      "item": "minecraft:bone",
+      "damage": 0,
+      "weight": 25,
+      "count_min": 5,
+      "count_max": 10
+    },
+    {
+      "item": "minecraft:skull",
+      "damage": 0,
+      "weight": 5,
+      "count_min": 5,
+      "count_max": 5
+    },
+    {
+      "item": "minecraft:skull",
+      "damage": 1,
+      "weight": 3,
+      "count_min": 2,
+      "count_max": 3
+    },
+    {
+      "item": "minecraft:tnt",
+      "damage": 0,
+      "weight": 4,
+      "count_min": 2,
+      "count_max": 4
+    },
+    {
+      "item": "minecraft:paper",
+      "damage": 0,
+      "weight": 20,
+      "count_min": 2,
+      "count_max": 3
+    },
+    {
+      "item": "minecraft:book",
+      "damage": 0,
+      "weight": 15,
+      "count_min": 2,
+      "count_max": 3
+    },
+    {
+      "item": "minecraft:experience_bottle",
+      "damage": 0,
+      "weight": 20,
+      "count_min": 5,
+      "count_max": 10
+    },
+    {
+      "item": "minecraft:writable_book",
+      "damage": 0,
+      "weight": 4,
+      "count_min": 1,
+      "count_max": 4
+    },
+    {
+      "item": "minecraft:map",
+      "damage": 0,
+      "weight": 5,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "minecraft:gold_ingot",
+      "damage": 0,
+      "weight": 10,
+      "count_min": 10,
+      "count_max": 20
+    },
+    {
+      "item": "minecraft:diamond",
+      "damage": 0,
+      "weight": 3,
+      "count_min": 1,
+      "count_max": 2
+    },
+    {
+      "item": "Mariculture:materials",
+      "damage": 2,
+      "weight": 4,
+      "count_min": 1,
+      "count_max": 3
+    },
+    {
+      "item": "Mariculture:rod_reed",
+      "damage": 0,
+      "weight": 6,
+      "count_min": 1,
+      "count_max": 2
+    },
+    {
+      "item": "Mariculture:rod_wood",
+      "damage": 0,
+      "weight": 4,
+      "count_min": 1,
+      "count_max": 2
+    },
+    {
+      "item": "Mariculture:rod_titanium",
+      "damage": 0,
+      "weight": 2,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "Mariculture:fludd",
+      "damage": 0,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 2
+    }
+  ]
+}

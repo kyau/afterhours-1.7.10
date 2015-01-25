@@ -1,0 +1,233 @@
+{
+  "category": "mfr:villageZoolologist",
+  "count_min": 5,
+  "count_max": 18,
+  "loot": [
+    {
+      "item": "MineFactoryReloaded:safarinet.singleuse",
+      "damage": 0,
+      "weight": 35,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "MineFactoryReloaded:safarinet.jailer",
+      "damage": 0,
+      "weight": 20,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "MineFactoryReloaded:safarinet.reusable",
+      "damage": 0,
+      "weight": 5,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "MineFactoryReloaded:safarinet.singleuse",
+      "damage": 0,
+      "nbt": {
+        "hide^b": 1
+      },
+      "weight": 17,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "MineFactoryReloaded:safarinet.jailer",
+      "damage": 0,
+      "nbt": {
+        "hide^b": 1
+      },
+      "weight": 10,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "MineFactoryReloaded:safarinet.reusable",
+      "damage": 0,
+      "nbt": {
+        "hide^b": 1
+      },
+      "weight": 2,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "minecraft:lead",
+      "damage": 0,
+      "weight": 10,
+      "count_min": 1,
+      "count_max": 17
+    },
+    {
+      "item": "minecraft:name_tag",
+      "damage": 0,
+      "weight": 10,
+      "count_min": 1,
+      "count_max": 14
+    },
+    {
+      "item": "MineFactoryReloaded:safarinet.launcher",
+      "damage": 0,
+      "weight": 8,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "minecraft:paper",
+      "damage": 0,
+      "weight": 14,
+      "count_min": 1,
+      "count_max": 16
+    },
+    {
+      "item": "minecraft:coal",
+      "damage": 1,
+      "weight": 14,
+      "count_min": 1,
+      "count_max": 16
+    },
+    {
+      "item": "MineFactoryReloaded:record.blank",
+      "damage": 0,
+      "weight": 14,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "minecraft:book",
+      "damage": 0,
+      "weight": 7,
+      "count_min": 1,
+      "count_max": 5
+    },
+    {
+      "item": "MineFactoryReloaded:spyglass",
+      "damage": 0,
+      "weight": 7,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "MineFactoryReloaded:ruler",
+      "damage": 0,
+      "weight": 7,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "MineFactoryReloaded:bucket.essence",
+      "damage": 0,
+      "weight": 6,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "MineFactoryReloaded:syringe.empty",
+      "damage": 0,
+      "weight": 6,
+      "count_min": 1,
+      "count_max": 4
+    },
+    {
+      "item": "MineFactoryReloaded:syringe.health",
+      "damage": 0,
+      "weight": 6,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "MineFactoryReloaded:syringe.growth",
+      "damage": 0,
+      "weight": 6,
+      "count_min": 1,
+      "count_max": 2
+    },
+    {
+      "item": "MineFactoryReloaded:hammer",
+      "damage": 0,
+      "weight": 25,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "MineFactoryReloaded:plastic.boots",
+      "damage": 0,
+      "weight": 25,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "MineFactoryReloaded:rubberwood.sapling",
+      "damage": 0,
+      "weight": 20,
+      "count_min": 1,
+      "count_max": 8
+    },
+    {
+      "item": "MineFactoryReloaded:vinescaffold",
+      "damage": 0,
+      "weight": 20,
+      "count_min": 1,
+      "count_max": 32
+    },
+    {
+      "item": "MineFactoryReloaded:plastic.sheet",
+      "damage": 0,
+      "weight": 16,
+      "count_min": 1,
+      "count_max": 64
+    },
+    {
+      "item": "MineFactoryReloaded:plastic.bag",
+      "damage": 0,
+      "weight": 7,
+      "count_min": 1,
+      "count_max": 24
+    },
+    {
+      "item": "minecraft:reeds",
+      "damage": 0,
+      "weight": 7,
+      "count_min": 1,
+      "count_max": 16
+    },
+    {
+      "item": "minecraft:pumpkin_seeds",
+      "damage": 0,
+      "weight": 7,
+      "count_min": 1,
+      "count_max": 16
+    },
+    {
+      "item": "minecraft:snowball",
+      "damage": 0,
+      "weight": 7,
+      "count_min": 1,
+      "count_max": 16
+    },
+    {
+      "item": "minecraft:sapling",
+      "damage": 0,
+      "weight": 7,
+      "count_min": 1,
+      "count_max": 16
+    },
+    {
+      "item": "MineFactoryReloaded:straw",
+      "damage": 0,
+      "weight": 5,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "MineFactoryReloaded:portaspawner",
+      "damage": 0,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    }
+  ]
+}

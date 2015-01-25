@@ -1,0 +1,352 @@
+{
+  "category": "strongholdLibrary",
+  "count_min": 1,
+  "count_max": 5,
+  "loot": [
+    {
+      "item": "minecraft:book",
+      "damage": 0,
+      "weight": 20,
+      "count_min": 1,
+      "count_max": 3
+    },
+    {
+      "item": "minecraft:paper",
+      "damage": 0,
+      "weight": 20,
+      "count_min": 2,
+      "count_max": 7
+    },
+    {
+      "item": "minecraft:map",
+      "damage": 0,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "minecraft:compass",
+      "damage": 0,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "minecraft:enchanted_book",
+      "damage": 0,
+      "weight": 2,
+      "count_min": 1,
+      "count_max": 5
+    },
+    {
+      "item": "MagicBees:frameOblivion",
+      "damage": 0,
+      "weight": 23,
+      "count_min": 1,
+      "count_max": 3
+    },
+    {
+      "item": "TConstruct:broadsword",
+      "damage": 0,
+      "weight": 2,
+      "count_min": 0,
+      "count_max": 1
+    },
+    {
+      "item": "Thaumcraft:ItemLootBag",
+      "damage": 0,
+      "weight": 4,
+      "count_min": 1,
+      "count_max": 3
+    },
+    {
+      "item": "Thaumcraft:ItemResource",
+      "damage": 2,
+      "weight": 4,
+      "count_min": 1,
+      "count_max": 3
+    },
+    {
+      "item": "Thaumcraft:ItemResource",
+      "damage": 6,
+      "weight": 4,
+      "count_min": 1,
+      "count_max": 3
+    },
+    {
+      "item": "Thaumcraft:ItemLootBag",
+      "damage": 1,
+      "weight": 3,
+      "count_min": 1,
+      "count_max": 2
+    },
+    {
+      "item": "Thaumcraft:ItemBaubleBlanks",
+      "damage": 0,
+      "weight": 3,
+      "count_min": 1,
+      "count_max": 2
+    },
+    {
+      "item": "Thaumcraft:ItemBaubleBlanks",
+      "damage": 1,
+      "weight": 3,
+      "count_min": 1,
+      "count_max": 2
+    },
+    {
+      "item": "Thaumcraft:ItemBaubleBlanks",
+      "damage": 2,
+      "weight": 3,
+      "count_min": 1,
+      "count_max": 2
+    },
+    {
+      "item": "Thaumcraft:ItemResource",
+      "damage": 9,
+      "weight": 3,
+      "count_min": 1,
+      "count_max": 2
+    },
+    {
+      "item": "Thaumcraft:ItemResource",
+      "damage": 9,
+      "weight": 20,
+      "count_min": 3,
+      "count_max": 6
+    },
+    {
+      "item": "Thaumcraft:ItemLootBag",
+      "damage": 2,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "Thaumcraft:ItemThaumonomicon",
+      "damage": 0,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "Thaumcraft:ItemSwordThaumium",
+      "damage": 0,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "Thaumcraft:ItemPickThaumium",
+      "damage": 0,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "Thaumcraft:ItemAxeThaumium",
+      "damage": 0,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "Thaumcraft:ItemHoeThaumium",
+      "damage": 0,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "Thaumcraft:ItemRingRunic",
+      "damage": 0,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "Thaumcraft:ItemBaubleBlanks",
+      "damage": 3,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "Thaumcraft:ItemBaubleBlanks",
+      "damage": 4,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "Thaumcraft:ItemBaubleBlanks",
+      "damage": 5,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "Thaumcraft:ItemBaubleBlanks",
+      "damage": 6,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "Thaumcraft:ItemBaubleBlanks",
+      "damage": 7,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "Thaumcraft:ItemBaubleBlanks",
+      "damage": 8,
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "Thaumcraft:ItemAmuletVis",
+      "damage": 0,
+      "nbt": {
+        "perditio^i": 100,
+        "aer^i": 0,
+        "ignis^i": 100,
+        "ordo^i": 400,
+        "aqua^i": 200,
+        "terra^i": 200
+      },
+      "weight": 1,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "IguanaTweaksTConstruct:wearableBucket",
+      "damage": 3,
+      "weight": 1,
+      "count_min": 0,
+      "count_max": 1
+    },
+    {
+      "item": "ComputerCraft:treasureDisk",
+      "damage": 0,
+      "nbt": {
+        "colour^i": 5000268,
+        "subPath": "dan200/alongtimeago",
+        "title": "\"alongtimeago\" by dan200"
+      },
+      "weight": 2,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "ComputerCraft:treasureDisk",
+      "damage": 0,
+      "nbt": {
+        "colour^i": 8375321,
+        "subPath": "fredthead/protector",
+        "title": "\"protector\" by fredthead"
+      },
+      "weight": 2,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "ComputerCraft:treasureDisk",
+      "damage": 0,
+      "nbt": {
+        "colour^i": 5744206,
+        "subPath": "GopherAtl/battleship",
+        "title": "\"battleship\" by GopherAtl"
+      },
+      "weight": 2,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "ComputerCraft:treasureDisk",
+      "damage": 0,
+      "nbt": {
+        "colour^i": 13388876,
+        "subPath": "GravityScore/LuaIDE",
+        "title": "\"LuaIDE\" by GravityScore"
+      },
+      "weight": 2,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "ComputerCraft:treasureDisk",
+      "damage": 0,
+      "nbt": {
+        "colour^i": 8375321,
+        "subPath": "JTK/maze3d",
+        "title": "\"maze3d\" by JTK"
+      },
+      "weight": 2,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "ComputerCraft:treasureDisk",
+      "damage": 0,
+      "nbt": {
+        "colour^i": 3368652,
+        "subPath": "Lyqyd/nsh",
+        "title": "\"nsh\" by Lyqyd"
+      },
+      "weight": 2,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "ComputerCraft:treasureDisk",
+      "damage": 0,
+      "nbt": {
+        "colour^i": 5744206,
+        "subPath": "nitrogenfingers/goldrunner",
+        "title": "\"goldrunner\" by nitrogenfingers"
+      },
+      "weight": 2,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "ComputerCraft:treasureDisk",
+      "damage": 0,
+      "nbt": {
+        "colour^i": 5744206,
+        "subPath": "nitrogenfingers/npaintpro",
+        "title": "\"npaintpro\" by nitrogenfingers"
+      },
+      "weight": 2,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "ComputerCraft:treasureDisk",
+      "damage": 0,
+      "nbt": {
+        "colour^i": 5000268,
+        "subPath": "TheOriginalBIT/tictactoe",
+        "title": "\"tictactoe\" by TheOriginalBIT"
+      },
+      "weight": 2,
+      "count_min": 1,
+      "count_max": 1
+    },
+    {
+      "item": "ComputerCraft:treasureDisk",
+      "damage": 0,
+      "nbt": {
+        "colour^i": 5744206,
+        "subPath": "vilsol/gameoflife",
+        "title": "\"gameoflife\" by vilsol"
+      },
+      "weight": 2,
+      "count_min": 1,
+      "count_max": 1
+    }
+  ]
+}
