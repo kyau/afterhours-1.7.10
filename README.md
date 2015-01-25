@@ -1,6 +1,6 @@
 # AfterHours Modpack
     Author:  kyau <kyau@kyau.net>
-    Date:    2015-01-22T17:58:04-0500
+    Date:    2015-01-25T16:35:10-0500
 
     Copyright (c) 2015 Sean Bruen.
     This modpack is free software: you can redistribute it and/or modify
@@ -29,6 +29,13 @@ modpacks are the following:
 * Mods added for a more vanilla feel to modded minecraft (steeper progression)!
 * LOTS of cosmetic/aesthetic based mods!
 * Massive changes to the hunger system!
+
+## Mod List
+
+The mod list is maintained via a Google Spreadsheet and can be viewed with the
+following link.
+
+[AfterHours Beta - 1.7.10](https://docs.google.com/spreadsheet/ccc?key=0Amy9drcHwxUqdG8wWDY3OTJMT2pNaVFfUXhDX19jcGc&usp=sharing)
 
 ## Attribution
 

@@ -148,7 +148,7 @@ Author: Powercrystals and Skyboy
 MineFactory Reloaded is a vast mod, comprising many useful machines and automation devices. This is one of the main foundation mods for the pack. While you can use Forestry multi-farms most of your farming and mob processing will probably be done with MFR.To get started, most of the MFR machines require rubber.  Rubber trees are generated throughout the landscape.  Break the wood to acquire the flexible material, then smelt it into rubber bars, and then again into raw plastic.  This plastic can then be crafted into sheets of plastic, which are the foundation for most of the machines. The raw rubber can be used to make torches.</text>
 	</page>
 	<page>
-		<text = wrap="200" y="20">
+		<text wrap="200" y="20">
 Putting the rubber wood in a sawmill will get you jungle planks and glue. Glue can be used as a replacement for slimeballs.</text>
 	</page>
 
