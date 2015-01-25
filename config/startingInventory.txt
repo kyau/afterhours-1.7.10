@@ -1,0 +1,2 @@
+Enchiridion:items,1,0,{booksid:"afterhours_book"}
+harvestcraft:ceasarsaladItem,8,0

@@ -1,0 +1,172 @@
+<?xml version="1.0"?>
+<book>
+    <info gen="true">
+        <name>Basic Survival Guide</name>
+        <author>kyau_net</author>
+        <color>775C96</color>
+	</info>
+
+
+	<page>
+		<text bold="true">Basic Survival Guide</text>
+		<text wrap="200" y="20">Welcome to the AfterHours modpack! This pack is a culmination of many different iterations of packs through-out many different minecraft versions with one main goal in mind: create a modpack that both brings back the survival aspects to modded minecraft and make progress as close to requiring teamwork as possible. If challenges or typically play solo or hermit-like then this might not be the pack for you.</text>
+	</page>
+
+	<page> <text bold="true">Tool Changes</text>
+		<text wrap="200" y="20">The first thing you may notice is you can't make wooden tools. There's a lot of changes to tools. Some of the most noticeable:</text>
+		<text wrap="200" x="15" y="50">
+1. Vanilla tools are either uncraftable or practically useless for mining,digging and chopping. The only ones craftable are the ones needed to make various machines.
+2. Some TiCon parts are uncraftable. Many tools can only be made with specific materials.
+3. Holding shift over a TiCon part pattern will tell you what materials you can use to make that part
+4. You will need metal before you can till land for a farm
+5. Tools have specific mining levels</text>
+	</page>
+
+	<page>
+		<text bold="true">Mining Tool Levels</text>
+		<text wrap="200" y="20">TiCon tool levels for mining follow a progression. You will need to replace the pickaxe head with the next higher level or level it up through use or add a mob head to the tool to be able to mine new materials.</text>
+		<text wrap="200" x="10" y="65">
+1. Stone Netherrack Cactus and Vanilla Tools
+2. Flint/Bone
+3. Copper
+4. Iron/Thaumium
+5. Bronze/Steel
+6. Obsidian/Alumite
+7. Ardite
+8. Cobalt
+9. Manyullyn: top tier tools from Redstone Arsenal and Thaumcraft are at this level.</text>
+	</page>
+
+	<page>
+		<text wrap="200" y="20">Some materials have been disabled for making TiCon tools. Some materials can only be used to make specific tools. If you hold shift while hovering over a TiCon pattern or cast it will tell you what materials can be used to make that part. Currently there are a intentional special cases and a few minor bugs and things reported as bugs that are not.</text>
+		<text wrap="200" x="10" y="110">
+1. Mattocks can only be made out of metal. Because of a bug they need to be made completely of one material and cannot be modified after creation. Attempting to modfy this tool may result in a client crash.
+2. Hammers and Battle Axes appear to only get experience from mining and logging not from killing mobs.</text>
+	</page>
+
+	<page>
+		<text wrap="200" x="10" y="20">
+3. Thaumium parts are made by using Thaumium ingots with a wooden pattern. This is the only metal that can be crafted into parts using a wooden pattern.
+4. Thaumium parts must be used in the first creation of the tool if you want the extra modifier from using Thaumium.</text>
+	</page>
+
+	<page>
+		<text bold="true">Your First Tools</text>
+		<text wrap="200" y="20">To start you can make a vanilla wooden shovel. TiCon wooden shovels however can be upgraded and repaired. Your first pick and axe will be made of flint. You can also use flint to make a knife which will act as a crude ranged or melee weapon. Since flint is no longer a drop from gravel, a crafting recipe has been added to make flint from gravel.</text>
+		<crafting x ="60" y="100" size="1">
+            <craft1>minecraft:gravel|minecraft:gravel|blank</craft1>
+            <craft2>minecraft:gravel|blank|blank</craft2>
+            <craft3>blank|blank|blank</craft3>
+            <craftResult>minecraft:flint</craftResult>
+        </crafting>
+	</page>
+
+	<page>
+		<text bold="true">Helpful things to get started</text>
+		<text wrap="200" y="20">Several items are available to help you hopefully survive the mobs that want you dead, maybe long enough to get a farm, at least until something burns it down. Since iron can take a while to get and you will want some tools before the iron age, a special clay bucket has been added.</text>
+		<crafting x ="60" y="70" size="1">
+            <craft1>minecraft:clay_ball|blank|minecraft:clay_ball</craft1>
+            <craft2>blank|minecraft:clay_ball|blank</craft2>
+            <craft3>blank|blank|blank</craft3>
+            <craftResult>IguanaTweaksTConstruct:clayBucketUnfired</craftResult>
+        </crafting>
+		<text wrap="200" x="0" y="160">Cook the unfired bucket in a furnace to get a clay bucket. Clay buckets can be used to move any fluid in the game. However when moving lava the clay bucket breaks after one use.</text>
+	</page>
+
+	<page>
+		<text wrap="200" y="5">
+1. Sleeping bags can be used to skip nighttime but will not reset your spawn.
+2. Strongboxes are blastproof and can be picked up and moved through the use of a crescent hammer
+3. Flags can be made and dyed different colors for use in marking your way through a cave system
+4. Pressing "U" over an item in your inventory or NEI will tell you what recipes can be made with that item. Pressing "R" over an item will tell you the crafting recipe that creates the item.
+5. Many of the mods add books that will give you more info on how to use the mod. In fact by now your hotbar is probably full of books. READ THEM.</text>
+	</page>
+
+	<page>
+		<text bold="true">Hunger</text>
+		<text wrap="200" y="20">The next major change in the AfterHours pack is to the hunger system.
+1. Yes you are starving faster, stop moving so much :p
+2. Basic one item recipes will not fill you up very much or last long.
+3. As a general rule the more ingredients in a meal the more it fills you up and the longer the food lasts. Higher level foods also give you a "Well Fed" buff that adds health regen. As long as you have the "Well Fed" buff you will not lose hunger.
+4. Farming is a must, but you are going to need a metal mattock to get started.</text>
+	</page>
+
+	<page>
+		<text bold="true">Automated Mining</text>
+		<text wrap="200" y="20">Everyone always asks what the automated mining options are in this pack. I am not going to cover how to use each of hem but here are your options:
+1. Ender Quarry - Extra Utilities
+2. Laser Drill - MFR
+3. Arcane Bore - Thaumcraft
+4. Ritual - Blood Magic
+Your pump for moving fluids is the Ender-Thermic pump from Extra Utilities. It will load the chunks it is moving fluid from, it works in all dimensions and will move any fluid.</text>
+	</page>
+
+	<page>
+		<text bold="true">Energy</text>
+		<text wrap="200" y="20">The main energy network in MF2 is Redstone Flux. MFR Bio Reactors and Generators, Thermal Expansion Generators and Extra Utilities generators all output various levels of RF and can be fueld with everything from lava to food. Conduits will convert from RF to MJ for the machines added by Forestry and Extra Bees. Nothing in this pack converts from MJ to RF.</text>
+	</page>
+
+
+	<page>
+		<text bold="true">Mods</text>
+		<text wrap="200" y="20">There are quite a few mods in this pack. The rest of this book is dedicated to sections for individual mods.</text>
+	</page>
+
+	<page>
+		<text bold="true">Extra Bees and Extra Trees</text>
+		<text wrap="200" y="20">
+Forestry Addon
+Author: Binnie
+Extra Bees adds machines that can be used to splice the genes of different bees together. It adds new bee species that can produce most metals, gems and resources. New frames and alveary blocks allow you even more control over your bee habitats. Extra Trees adds new breedable tree species. The fruit from these trees are compatible with Harvestcraft recipes using fruit. The mod also adds a woodworker that can create hundreds of customized panels for decoration.</text>
+	</page>
+
+    <page>
+    	<text bold="true">Extra Utilities</text>
+		<text wrap="200" y="20">
+Author: RWTema
+Extra Utilities adds many utility type blocks. Of special note in the AfterHours pack, the Ender Thermic Pump is the only pump in the pack. It functions as a chunkloader and runs off RF. It can pump any fluid in the pack. When it removes a source block of fluid it replaces it with a stone block which keeps server lag to a minimum. The Ender Quarry functions much the same way replacing ores with dirt instead of leaving gaping holes. The builder's wand and angel block can be used to build castles in the sky. The trading station can help you access all the trades in your villager breeding farm.</text>
+	</page>
+
+	<page>
+		<text bold="true">Harvestcraft</text>
+		<text wrap="200" y="20">
+Author: MatrexxVigil
+This mod adds a majority of the crops and foods you will be trying to find to survive. Try to make meals not snacks as soon as possible. You will find the seeds by breaking grass. Any produce can be turned into seeds by placing it in a crafting grid.</text>
+	</page>
+
+	<page>
+		<text bold="true">Hunger Overhaul</text>
+		<text wrap="200" y="20">
+Author: IguanaMan
+This mod is what changes the hunger values and helps you starve to death. This is one of the main foundation mods in the AfterHours pack.</text>
+	</page>
+
+    <page>
+    	<text bold="true">MineFactory Reloaded</text>
+		<text wrap="200" y="20">
+Author: Powercrystals and Skyboy
+MineFactory Reloaded is a vast mod, comprising many useful machines and automation devices. This is one of the main foundation mods for the pack. While you can use Forestry multi-farms most of your farming and mob processing will probably be done with MFR.To get started, most of the MFR machines require rubber.  Rubber trees are generated throughout the landscape.  Break the wood to acquire the flexible material, then smelt it into rubber bars, and then again into raw plastic.  This plastic can then be crafted into sheets of plastic, which are the foundation for most of the machines. The raw rubber can be used to make torches.</text>
+	</page>
+	<page>
+		<text = wrap="200" y="20">
+Putting the rubber wood in a sawmill will get you jungle planks and glue. Glue can be used as a replacement for slimeballs.</text>
+	</page>
+
+    <page>
+    	<text bold="true">Redstone Arsenal</text>
+		<text wrap="200" y="20">
+Author: King Lemming and the CoFH Team
+Redstone Arsenal provides some of the most powerful tools you can get in the AfterHours pack. Each tool has 2 modes that can be swapped between for "normal" or "enhanced" behaviour.Enhanced behaviour uses more RF per use. These tools can also be enchanted. Efficiency enchats will lower the ammount of RF the tool requires.</text>
+	</page>
+
+    <page>
+    	<text bold="true">Tinker's Tweaks</text>
+		<text wrap="200" y="20">
+Author: IguanaMan
+The AfterHours pack uses a mod called Tinker's Tweaks to add an RPG style experience leveling system to the tools. Tools must be leveled either by attaching an appropriate mob head or by using the tool to unloack the ability to mine new ores. Every second time you level your tool you will unlock a new modifier slot and possible get a free modifier.Tool parts can be replaced with upgrades. Put a fully repaired tool in a crafting grid with the part you want to use to upgrade it.Replacing parts will cost you some of the xp on the tool and you will lose the original part.</text>
+	</page>
+	<page>
+		<text wrap="200" y="20">
+Tool xp is how much xp you have towards the next tool mastery level. Boost xp is how much xp you have towards leveling up the mining level of the tool.</text>
+	</page>
+</book>

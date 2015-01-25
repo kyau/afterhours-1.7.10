@@ -5,8 +5,6 @@ val certusQuartz = <appliedenergistics2:item.ItemMultiMaterial:0>;
 # Buildcraft
 val goldGear = <BuildCraft|Core:goldGearItem>;
 val woodGear = <BuildCraft|Core:woodenGearItem>;
-# IndustrialCraft2
-val nuke = <IC2:blockNuke>;
 # Vanilla
 val cobblestone = <minecraft:cobblestone>;
 val stone = <minecraft:stone>;
